@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/public/css/index.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -13,7 +13,15 @@
   </head>
   <body>
     <div class="aboutMe_css">
-      <div style="background-color: #a37e7e; color: #e9e9e9">
+      <aside
+        style="
+          background-color: #a37e7e;
+          color: #e9e9e9;
+          border-right: solid;
+          border-right-color: #e9e9e9;
+        "
+      >
+        <i class="fa fa-close close_navbar"></i>
         <div class="navbar">
           <div
             style="
@@ -21,33 +29,73 @@
               flex-direction: column;
               align-items: center;
               gap: 5px;
-              margin-bottom: 30px;
+              margin-bottom: 45px;
             "
           >
             <img src="/public/images/me.jpg" class="navbar_pfp" />
             <p style="font-weight: bold; margin: 0">Sonya Tan</p>
             <p style="margin: 0">Personal Portfolio</p>
           </div>
-          <div style="display: flex; gap: 10px; padding-left: 20px">
+          <div class="links_style">
             <i class="fa fa-home" style="color: #e9e9e9"></i
             ><a href="">About Me</a>
           </div>
-          <div style="display: flex; gap: 10px; padding-left: 20px">
+          <div class="links_style">
             <i class="fa fa-laptop" style="color: #e9e9e9"></i>
             <a href="">My Works</a>
           </div>
-          <div style="display: flex; gap: 10px; padding-left: 20px">
+          <div class="links_style">
             <i class="fa fa-phone" style="color: #e9e9e9"></i>
             <a href="">Contact Info</a>
           </div>
         </div>
-      </div>
-      <div
-        style="margin-top: 40px; display: flex; flex-direction: row; gap: 40px"
+      </aside>
+      <main
+        style="
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-template-rows: 349px minmax(100px, auto);
+          gap: 40px;
+          width: 100%;
+          overflow-x: hidden;
+        "
       >
-        <img style="width: 220px; height: 300px" src="/public/images/me.jpg" />
-        <p class="page_title">About Me</p>
-      </div>
+        <div class="img_line_decos">
+          <div class="deco_top_line1"></div>
+          <div class="deco_top_line2"></div>
+          <img
+            style="
+              width: 220px;
+              height: 300px;
+              margin: 25px;
+              border-radius: 0 5px 0 5px;
+            "
+            src="/public/images/me.jpg"
+          />
+          <div class="deco_top_line3"></div>
+          <div class="deco_top_line4"></div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            padding-right: 60px;
+            min-width: 550px;
+          "
+        >
+          <p class="page_title">About Me</p>
+          <p style="font-size: 18px">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+        <div class="grid_container_item3">Test</div>
+      </main>
     </div>
   </body>
 </html>
