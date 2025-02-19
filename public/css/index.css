@@ -10,59 +10,103 @@ body {
   background: linear-gradient(to bottom right, black, #a37e7e);
 }
 
-/* index.html css style */
-.navbar {
+/* sidebar when it opens up using transition */
+.sidebar_opened {
+  background-color: #a37e7e;
+  color: #e9e9e9;
+  border-right: none;
+  border-right-color: #e9e9e9;
+  width: 0px;
+  min-width: 0px;
+  transition: all 0.5s linear;
+  overflow-x: hidden;
+}
+
+.sidebar_contents {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 250px;
-  justify-content: start;
-  margin-top: 100px;
 }
 
-.close_navbar {
-  margin: 15px;
-  float: right;
+.sidebar_closed_icon {
+  margin: 20px;
+  text-align: right;
   font-size: 22px;
+  padding-bottom: 36px;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #e9e9e9;
-}
-
-.links_style {
-  display: flex;
-  gap: 10px;
-  padding-left: 55px;
-  padding: 15px 0 15px 55px;
-}
-
-.links_style:hover {
-  background-color: #9b6969;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.navbar_pfp {
+.sidebar_user_pfp {
   border-radius: 50%;
   height: 100px;
   width: 100px;
   margin: 0;
   object-fit: cover;
+  padding-bottom: 5px;
+}
+
+.sidebar_links {
+  display: flex;
+  width: 195px;
+  gap: 10px;
+  padding: 15px 0 15px 55px;
+}
+
+.sidebar_links:hover {
+  background-color: #9b6969;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar_links a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+/* sidebar when it closes using transition */
+.sidear_closed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.sidebar_closed_pfp {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin: 0;
+  object-fit: cover;
+  margin-top: 160px;
+  margin-bottom: 45.5px;
+}
+
+.sidebar_closed_icons {
+  padding: 17px 15px;
+  font-size: 16px;
+}
+
+.sidebar_closed_icons:hover {
+  background-color: #9b6969;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.open_sidebar:hover {
+  cursor: pointer;
 }
 
 .aboutMe_css {
   display: flex;
   flex-direction: row;
-  gap: 60px;
   color: #e9e9e9;
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .img_line_decos {
   position: relative;
-  max-width: 270px;
-  max-height: 349px;
+  max-width: 198px;
+  max-height: 248px;
 }
 
 .deco_top_line1 {
@@ -104,12 +148,23 @@ body {
 }
 
 .page_title {
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.page_sub_title{
+  font-size: 15px;
 }
 
 .grid_container_item3 {
   grid-column: 1 / span 2;
-  padding-right: 60px;
-  margin: auto;
 }
+
+.linkedin_icon{
+  font-size: 18px;
+  padding-top: 1px;
+  text-decoration: none;
+  color: white;
+}
+
