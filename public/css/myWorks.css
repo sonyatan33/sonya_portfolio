@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  height: 100%;
+  background: linear-gradient(to bottom right, black, #a37e7e);
+}
+
+p {
+  color: #e9e9e9;
+}
+
+a {
+  color: #e9e9e9;
+}
+
+.myWorks_css {
+  display: flex;
+  flex-direction: row;
+  color: #e9e9e9;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sidebar_opened {
+  background-color: #a37e7e;
+  color: #e9e9e9;
+  border-right: none;
+  border-right-color: #e9e9e9;
+  width: 0px;
+  min-width: 0px;
+  transition: all 0.5s linear;
+  overflow-x: hidden;
+}
+
+.sidebar_contents {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sidebar_closed_icon {
+  margin: 20px;
+  text-align: right;
+  font-size: 22px;
+  padding-bottom: 36px;
+}
+
+.sidebar_user_pfp {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  object-fit: cover;
+  padding-bottom: 5px;
+}
+
+.sidebar_links {
+  display: flex;
+  width: 195px;
+  gap: 10px;
+  padding: 15px 0 15px 55px;
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+.sidebar_links:hover {
+  background-color: #9b6969;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* sidebar when it closes using transition */
+.sidear_closed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.sidebar_closed_pfp {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin: 0;
+  object-fit: cover;
+  margin-top: 160px;
+  margin-bottom: 45.5px;
+}
+
+.sidebar_closed_icons {
+  padding: 17px 15px;
+  font-size: 16px;
+}
+
+.sidebar_closed_icons:hover {
+  background-color: #9b6969;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.open_sidebar:hover {
+  cursor: pointer;
+}
+
+.myWorks_main_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.title {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+}
+
+.sub_titles {
+  text-decoration: none;
+}
+
+.single_grid_view {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px;
+  gap: 40px;
+  margin: 16px 0px 40px 0px;
+}
+
+.grid_container {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border: 0.5px solid #ccc;
+  border-radius: 6px;
+}

@@ -3,9 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/resume.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>My Resume</title>
   </head>
   <body>
-    <p>hello world</p>
+    <div class="resume_css">
+      <aside class="sidebar_opened" id="openSidebar">
+        <div class="sidebar_contents">
+          <i
+            class="fa fa-close sidebar_closed_icon"
+            onClick="closeSidebar()"
+          ></i>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img src="/public/images/yujin.jpg" class="sidebar_user_pfp" />
+            <p style="font-weight: bold; margin: 0; padding-bottom: 5px">
+              Sonya Tan
+            </p>
+            <p style="margin: 0; padding-bottom: 5px; padding-bottom: 40px">
+              Personal Portfolio
+            </p>
+            <a href="index.html" class="sidebar_links">
+              <div>
+                <i
+                  class="fa fa-home"
+                  style="color: #e9e9e9; padding-right: 10px"
+                ></i
+                >About Me
+              </div>
+            </a>
+            <a href="myWorks.html" class="sidebar_links">
+              <div>
+                <i
+                  class="fa fa-laptop"
+                  style="color: #e9e9e9; padding-right: 10px"
+                ></i
+                >My Works
+              </div>
+            </a>
+            <a href="resume.html" class="sidebar_links">
+              <div>
+                <i
+                  class="fa fa-file"
+                  style="color: #e9e9e9; padding-right: 10px"
+                ></i
+                >My Resume
+              </div>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <aside
+        style="
+          display: block;
+          background-color: #a37e7e;
+          color: #e9e9e9;
+          border-right: solid;
+          border-right-color: #e9e9e9;
+          min-width: 60px;
+          max-width: 80px;
+        "
+        id="closeSidebar"
+      >
+        <div class="sidear_closed">
+          <i
+            class="fa-solid fa-bars open_sidebar"
+            onclick="openSidebar()"
+            id="sidebar_btn"
+          ></i>
+          <img src="/public/images/yujin.jpg" class="sidebar_closed_pfp" />
+          <a href="index.html">
+            <i
+              class="fa fa-home sidebar_closed_icons"
+              style="color: #e9e9e9"
+            ></i>
+          </a>
+          <a href="myWorks.html">
+            <i
+              class="fa fa-laptop sidebar_closed_icons"
+              style="color: #e9e9e9"
+            ></i>
+          </a>
+          <a href="resume.html">
+            <i
+              class="fa fa-file sidebar_closed_icons"
+              style="color: #e9e9e9"
+            ></i>
+          </a>
+        </div>
+      </aside>
+    </div>
   </body>
+  <script type="text/javascript">
+    function openSidebar() {
+      document.getElementById("openSidebar").style.minWidth = "250px";
+      document.getElementById("openSidebar").style.borderRight = "solid";
+      document.getElementById("closeSidebar").style.display = "none";
+    }
+    function closeSidebar() {
+      document.getElementById("openSidebar").style.minWidth = "0px";
+      document.getElementById("closeSidebar").style.display = "block";
+      document.getElementById("openSidebar").style.borderRight = "none";
+    }
+  </script>
 </html>
