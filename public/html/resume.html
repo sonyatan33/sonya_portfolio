@@ -13,7 +13,7 @@
   <body>
     <div class="resume_css">
       <aside class="sidebar_opened" id="openSidebar">
-        <div class="sidebar_contents">
+        <div class="sidebar_contents" id="sidebar_content">
           <i
             class="fa fa-close sidebar_closed_icon"
             onClick="closeSidebar()"
@@ -66,11 +66,10 @@
           border-right: solid;
           border-right-color: #e9e9e9;
           min-width: 60px;
-          max-width: 80px;
         "
         id="closeSidebar"
       >
-        <div class="sidear_closed">
+        <div class="sidebar_closed">
           <i
             class="fa-solid fa-bars open_sidebar"
             onclick="openSidebar()"
@@ -193,9 +192,17 @@
           overload and decision anxiety.
         </p>
         <p class="sub_titles">SKILLS</p>
-        <p><em>Programming languages:</em> Java, JavaScript, Python, HTML, Dart, CSS, PHP</p>
-        <p><em>Database:</em> KNIME Analytics, MySQL Workbench, Firebase, Cloud Firestore</p>
-        <p><em>Others:</em> Flutter, Android Studio, Visual Studio Code, Adobe Xd</p>
+        <p>
+          <em>Programming languages:</em> Java, JavaScript, Python, HTML, Dart,
+          CSS, PHP
+        </p>
+        <p>
+          <em>Database:</em> KNIME Analytics, MySQL Workbench, Firebase, Cloud
+          Firestore
+        </p>
+        <p>
+          <em>Others:</em> Flutter, Android Studio, Visual Studio Code, Adobe Xd
+        </p>
         <p class="sub_titles">WORK EXPERIENCE</p>
         <div class="work_experience_content">
           <p>Sales Associate (Part-time)</p>
@@ -203,21 +210,38 @@
         </div>
         <p class="work_exp_sub_content">Planet Telecoms Pte Ltd, Singapore</p>
         <ul class="list_1">
-            <li>Promote products to hit sales targets.</li>
-            <li>Exhibited terminologies used in the sales industry.</li>
-            <li>Performed sales transactions and cashiering duties with familiarity with POS System.</li>
-            <li>Developed interpersonal skills when communicating with customers.</li>
-            <li>Developed a flair for understanding customer needs.</li>
+          <li>Promote products to hit sales targets.</li>
+          <li>Exhibited terminologies used in the sales industry.</li>
+          <li>
+            Performed sales transactions and cashiering duties with familiarity
+            with POS System.
+          </li>
+          <li>
+            Developed interpersonal skills when communicating with customers.
+          </li>
+          <li>Developed a flair for understanding customer needs.</li>
         </ul>
         <div class="work_experience_content">
-          <p style="margin-top: 10px;">Software Developer Intern</p>
+          <p style="margin-top: 10px">Software Developer Intern</p>
           <p>Jul 2023 - Nov 2023</p>
         </div>
-        <p class="work_exp_sub_content">FirstCom Solutions Pte Ltd, Singapore</p>
+        <p class="work_exp_sub_content">
+          FirstCom Solutions Pte Ltd, Singapore
+        </p>
         <ul class="list_1">
-            <li>Collaborated with team members to review code, provide feedback, and improve overall development processes, using Git for code sharing and version management.</li>
-            <li>Conducted thorough testing and documentation to ensure software quality and maintainability.</li>
-            <li>Coded new features and addressed bugs in the company's web application with the use of JavaScript and PHP programming language.</li>
+          <li>
+            Collaborated with team members to review code, provide feedback, and
+            improve overall development processes, using Git for code sharing
+            and version management.
+          </li>
+          <li>
+            Conducted thorough testing and documentation to ensure software
+            quality and maintainability.
+          </li>
+          <li>
+            Coded new features and addressed bugs in the company's web
+            application with the use of JavaScript and PHP programming language.
+          </li>
         </ul>
         <p class="alternate_sub_titles">LANGUAGES</p>
         <p>Fluent in English and Chinese</p>
@@ -229,11 +253,13 @@
       document.getElementById("openSidebar").style.minWidth = "250px";
       document.getElementById("openSidebar").style.borderRight = "solid";
       document.getElementById("closeSidebar").style.display = "none";
+      document.getElementById("sidebar_content").style.position = "fixed";
     }
     function closeSidebar() {
       document.getElementById("openSidebar").style.minWidth = "0px";
       document.getElementById("closeSidebar").style.display = "block";
       document.getElementById("openSidebar").style.borderRight = "none";
+      document.getElementById("sidebar_content").style.position = "static";
     }
   </script>
 </html>

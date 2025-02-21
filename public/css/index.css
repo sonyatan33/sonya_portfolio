@@ -59,7 +59,7 @@ body {
 }
 
 /* sidebar when it closes using transition */
-.sidear_closed {
+.sidebar_closed {
   display: flex;
   flex-direction: column;
   align-items: center;
