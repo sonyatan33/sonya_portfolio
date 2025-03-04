@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>My Works</title>
   </head>
   <body>
     <div class="myWorks_css">
@@ -101,20 +101,15 @@
         <p class="title">Software Development Projects</p>
         <div class="single_grid_view">
           <div class="grid_container"></div>
-          <div  class="grid_container"></div>
+          <div class="grid_container"></div>
         </div>
         <p class="title">UI/UX</p>
-
-        <p>
           <a href="" class="sub_titles"
             >Personal Project - Personal Blog UI/UX
           </a>
-        </p>
-        <p>
           <a href="" class="sub_titles">
             Final Year Project - Insurance Application UI/UX
           </a>
-        </p>
       </main>
     </div>
   </body>
@@ -127,7 +122,9 @@
     function closeSidebar() {
       document.getElementById("openSidebar").style.minWidth = "0px";
       document.getElementById("closeSidebar").style.display = "block";
-      document.getElementById("openSidebar").style.borderRight = "none";
+      setTimeout(function () {
+        document.getElementById("openSidebar").style.borderRight = "none";
+      }, 500);
     }
   </script>
 </html>

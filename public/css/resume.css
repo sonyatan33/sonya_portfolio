@@ -118,6 +118,7 @@ p {
   gap: 5px;
   margin: 40px;
   width: 100%;
+  min-width: 400px;
 }
 
 .title {

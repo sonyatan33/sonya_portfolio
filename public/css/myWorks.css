@@ -124,6 +124,12 @@ a {
 
 .sub_titles {
   text-decoration: none;
+  margin: 6px 0;
+}
+
+.sub_titles:hover{
+  /* color: #e0a9a9; */
+  text-decoration: underline;
 }
 
 .single_grid_view {
