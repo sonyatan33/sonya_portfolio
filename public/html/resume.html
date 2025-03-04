@@ -100,7 +100,9 @@
         <p class="title">SONYA TAN ZU WEN</p>
         <div class="line_seperator"></div>
         <p>Citizenship: Singapore</p>
-        <p>Email: <a href="">sonyatan33@gmail.com</a></p>
+        <p>
+          Email: <a href="mailto:sonyatan33@gmail.com">sonyatan33@gmail.com</a>
+        </p>
         <p>Phone Number: +65 88769055</p>
         <p>
           LinkedIn:
@@ -253,13 +255,17 @@
       document.getElementById("openSidebar").style.minWidth = "250px";
       document.getElementById("openSidebar").style.borderRight = "solid";
       document.getElementById("closeSidebar").style.display = "none";
-      document.getElementById("sidebar_content").style.position = "fixed";
+      setTimeout(function () {
+        document.getElementById("sidebar_content").style.position = "fixed";
+      }, 500);
     }
     function closeSidebar() {
       document.getElementById("openSidebar").style.minWidth = "0px";
       document.getElementById("closeSidebar").style.display = "block";
-      document.getElementById("openSidebar").style.borderRight = "none";
       document.getElementById("sidebar_content").style.position = "static";
+      setTimeout(function () {
+        document.getElementById("openSidebar").style.borderRight = "none";
+      }, 500);
     }
   </script>
 </html>

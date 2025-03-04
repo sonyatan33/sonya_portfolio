@@ -131,12 +131,12 @@
           style="
             display: flex;
             flex-direction: column;
-            padding-right: 100px;
+            padding-right: 40px;
             min-width: 550px;
           "
         >
           <p class="page_title">About Me</p>
-          <pz>
+          <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -147,7 +147,10 @@
         </div>
         <div class="grid_container_item3">
           <div class="page_title">Contact Information</div>
-          <p>Email: sonyatan33@gmail.com</p>
+          <p>
+            Email:
+            <a href="mailto:sonyatan33@gmail.com">sonyatan33@gmail.com</a>
+          </p>
           <p>
             Find me also on:
             <a
@@ -172,7 +175,9 @@
     function closeSidebar() {
       document.getElementById("openSidebar").style.minWidth = "0px";
       document.getElementById("closeSidebar").style.display = "block";
-      document.getElementById("openSidebar").style.borderRight = "none";
+      setTimeout(function () {
+        document.getElementById("openSidebar").style.borderRight = "none";
+      }, 500);
     }
   </script>
 </html>
