@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: "Inter";
   height: 100%;
-  background: linear-gradient(to bottom right, black, #a37e7e);
+  background: linear-gradient(to bottom right, #0b0b0b, #8F8F8F 85%);
 }
 
 a{
@@ -17,7 +17,7 @@ a{
 
 /* sidebar when it opens up using transition */
 .sidebar_opened {
-  background-color: #a37e7e;
+  background-color: #0b0b0b;
   color: #e9e9e9;
   border-right: none;
   border-right-color: #e9e9e9;
@@ -59,7 +59,7 @@ a{
 }
 
 .sidebar_links:hover {
-  background-color: #9b6969;
+  background-color: #494949;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -88,7 +88,7 @@ a{
 }
 
 .sidebar_closed_icons:hover {
-  background-color: #9b6969;
+  background-color: #494949;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 

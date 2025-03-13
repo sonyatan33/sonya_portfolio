@@ -127,7 +127,7 @@ a {
   margin: 6px 0;
 }
 
-.sub_titles:hover{
+.sub_titles:hover {
   /* color: #e0a9a9; */
   text-decoration: underline;
 }
@@ -141,8 +141,7 @@ a {
 }
 
 .grid_container {
-  background-color: #e9e9e9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  border: 0.5px solid #ccc;
+  background: linear-gradient(to bottom right, #3a3a38, #4f2e2e);
   border-radius: 6px;
 }
