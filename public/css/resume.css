@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: "Inter";
   /* height: 100%; */
-  background: linear-gradient(to bottom right, black, #a37e7e);
+  background: linear-gradient(to bottom right, #0b0b0b 250px, #8f8f8f);
 }
 
 a {
@@ -27,11 +27,11 @@ p {
   flex-direction: row;
   color: #e9e9e9;
   /* height: 100%; */
-  overflow-x: hidden;
+  
 }
 
 .sidebar_opened {
-  background-color: #a37e7e;
+  background-color: #0b0b0b;
   color: #e9e9e9;
   border-right: none;
   border-right-color: #e9e9e9;
@@ -73,43 +73,22 @@ p {
 }
 
 .sidebar_links:hover {
-  background-color: #9b6969;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #494949;
+  box-shadow: 0 4px 8px 0 rgb(237 237 237 / 20%);
 }
 
 /* sidebar when it closes using transition */
-.sidebar_closed {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  font-size: 22px;
-  width: 60px;
-  position: fixed;
+.sidebar_closed{
+padding: 20px;
+font-size: 22px;
+position: sticky;
+top: 0;
 }
 
-.sidebar_closed_pfp {
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  margin: 0;
-  object-fit: cover;
-  margin-top: 160px;
-  margin-bottom: 45.5px;
-}
-
-.sidebar_closed_icons {
-  padding: 17px 15px;
-  font-size: 16px;
-}
-
-.sidebar_closed_icons:hover {
-  background-color: #9b6969;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.open_sidebar:hover {
-  cursor: pointer;
+.sidebar_closed:hover{
+  background-color: #494949;
+box-shadow: 0 4px 8px 0 rgb(237 237 237 / 20%);
+cursor: pointer;
 }
 
 .resume_main_container {
@@ -119,6 +98,8 @@ p {
   margin: 40px;
   width: 100%;
   min-width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .title {
@@ -131,9 +112,9 @@ p {
   margin-top: 50px;
 }
 
-.alternate_sub_titles{
+.alternate_sub_titles {
   font-size: 25px;
-  margin-top: 40px;    
+  margin-top: 40px;
 }
 
 .line_seperator {
@@ -154,12 +135,12 @@ li {
 .education_content {
   display: flex;
   justify-content: space-between;
-  color: #e0a9a9;
+  color: #ff9e9e;
   margin-top: 20px;
 }
 
 .list_2 {
-  color: #e0a9a9;
+  color: #ff9e9e;
   padding-left: 15.5px;
   margin: 0;
 }
@@ -173,16 +154,16 @@ li {
 }
 
 em {
-  color: #e0a9a9;
+  color: #ff9e9e;
   font-style: normal;
 }
 
 .work_experience_content {
   display: flex;
   justify-content: space-between;
-  color: #e0a9a9;
+  color: #ff9e9e;
 }
 
-.work_exp_sub_content{
-    color: #a16f6f;
+.work_exp_sub_content {
+  color: #d48686;
 }
