@@ -59,56 +59,22 @@
           </div>
         </div>
       </aside>
-      <aside
-        style="
-          display: block;
-          background-color: #0b0b0b;
-          color: #e9e9e9;
-          border-right: solid;
-          border-right-color: #e9e9e9;
-          min-width: 60px;
-          max-width: 80px;
-        "
-        id="closeSidebar"
-      >
+      <aside id="closeSidebar" onclick="openSidebar()">
         <div class="sidebar_closed">
-          <i
-            class="fa-solid fa-bars open_sidebar"
-            onclick="openSidebar()"
-            id="sidebar_btn"
-          ></i>
-          <img src="../images/yujin.jpg" class="sidebar_closed_pfp" />
-          <a href="index.html">
-            <i
-              class="fa fa-home sidebar_closed_icons"
-              style="color: #e9e9e9"
-            ></i>
-          </a>
-          <a href="myWorks.html">
-            <i
-              class="fa fa-laptop sidebar_closed_icons"
-              style="color: #e9e9e9"
-            ></i>
-          </a>
-          <a href="resume.html">
-            <i
-              class="fa fa-file sidebar_closed_icons"
-              style="color: #e9e9e9"
-            ></i>
-          </a>
+          <i class="fa-solid fa-bars open_sidebar" id="sidebar_btn"></i>
         </div>
       </aside>
       <main
         style="
-          margin-top: 40px;
           margin-left: 40px;
           display: grid;
           grid-template-columns: auto auto;
-          grid-template-rows: 248px auto;
           gap: 40px;
           width: 100%;
           height: 100%;
-          overflow: hidden;
+          align-items: center;
+          overflow-y: auto;
+          overflow-x: hidden;
         "
         id="main"
       >
@@ -116,27 +82,15 @@
           <div class="deco_top_line1"></div>
           <div class="deco_top_line2"></div>
           <img
-            style="
-              width: 150px;
-              height: 200px;
-              margin: 25px;
-              border-radius: 0 5px 0 5px;
-            "
+            style="height: 400px; margin: 25px; border-radius: 0 5px 0 5px"
             src="../images/yujin.jpg"
           />
           <div class="deco_top_line3"></div>
           <div class="deco_top_line4"></div>
         </div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            padding-right: 40px;
-            min-width: 550px;
-          "
-        >
+        <div style="display: flex; flex-direction: column; padding-right: 40px">
           <p class="page_title">About Me</p>
-          <p>
+          <p style="margin-bottom: 20px">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -144,22 +98,18 @@
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-        </div>
-        <div class="grid_container_item3">
-          <div class="page_title">Contact Information</div>
-          <p>
+          <p class="page_title">Contact Information</p>
+          <p class="content_padding">
             Email:
             <a href="mailto:sonyatan33@gmail.com">sonyatan33@gmail.com</a>
           </p>
-          <p>
+          <p class="content_padding">
             Find me also on:
             <a
               href="https://linkedin.com/in/sonya-tan/"
               target="_blank"
               rel="noreferrer"
-              class="linkedin_icon"
-            >
-              <i class="fa-brands fa-linkedin"></i>
+              >www.linkedin.com/in/sonya-tan
             </a>
           </p>
         </div>
